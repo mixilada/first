@@ -1,24 +1,9 @@
 ---
-import '../styles/global.css';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "My LDT Portfolio";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-		<h1>{pageTitle}</h1>
-		<p>Welcome to my portfolio website. This is my first time coding a website from scratch, and I'm going to be using this as a learning project, which will eventually become what I show employers when I graduate from LDT.</p>
+<BaseLayout pageTitle={pageTitle}>
+  <p>Welcome to my portfolio website. This is my first time coding a website from scratch, and I'm going to be using this as a learning project, which will eventually become what I show employers when I graduate from LDT.</p>
 		<p>I started out by using a combination of Astro and Netlify, which were recommended to me by Claude AI. I used <a href="https://docs.astro.build/en/tutorial/0-introduction/">Astro's blog tutorial</a> to start out.</p>
-		
-	</body>
-</html>
+</BaseLayout>
